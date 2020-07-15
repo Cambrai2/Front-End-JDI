@@ -29,7 +29,7 @@
     "gulp-sass-glob": "^1.0.9",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-util": "^3.0.8",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-creditcardvalidator": "^1.0.0",
     "js-yaml": "^3.13.1",
     "postcss-flexibility": "^2.0.0",
