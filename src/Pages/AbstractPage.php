@@ -17,6 +17,10 @@ abstract class AbstractPage extends GlobalAbstractPage
     return false;
   }
 
+  protected function _getTestBanner()
+  {
+    return false;
+  }
   /**
    * @return AbstractPartial|false|null
    */

@@ -5,6 +5,7 @@ use ProtectedNet\FrontendTest\Partials\AbstractPartial;
 
 class SlideOne extends AbstractPartial
 {
+
   /** @return string */
   public function getBlockName(): string
   {

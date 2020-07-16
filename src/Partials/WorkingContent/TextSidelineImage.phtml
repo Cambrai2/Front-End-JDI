@@ -1,7 +1,7 @@
 <?php
-/** @var $this SlideOne */
+/** @var $this TextSidelineImage */
 
-use ProtectedNet\FrontendTest\Partials\HeroContent\SlideOne\SlideOne;
+use ProtectedNet\FrontendTest\Partials\WorkingContent\TextSidelineImage\TextSidelineImage;
 ?>
 
 
@@ -12,7 +12,7 @@ use ProtectedNet\FrontendTest\Partials\HeroContent\SlideOne\SlideOne;
   <div class="grid-container">
     <div class="grid-x">
       <div class="cell medium-6">
-        <h1 class="<?= $this->getElementName('title') ?>">Lorem ipsum dolor sit amet, consectetur.</h1>
+        <h1 class="<?= $this->getElementName('title') ?>"><?= $this->getData("b") ?>Lorem ipsum dolor sit amet, consectetur.</h1>
         <p class="<?= $this->getElementName('text') ?>">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ipsa repellendus repudiandae?</p>
         <ul class="<?= $this->getElementName('list') ?>">
           <li class="<?= $this->getElementName('list', 'item') ?>">Lorem ipsum dolor.</li>
@@ -22,5 +22,3 @@ use ProtectedNet\FrontendTest\Partials\HeroContent\SlideOne\SlideOne;
     </div>
   </div>
 </div>
-
-
