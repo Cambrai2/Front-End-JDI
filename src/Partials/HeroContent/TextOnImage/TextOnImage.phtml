@@ -1,0 +1,23 @@
+<?php
+/** @var $this TextSideImage */
+
+use ProtectedNet\FrontendTest\Partials\HeroContent\TextOnImage\TextOnImage;
+?>
+
+<div class="<?= $this->getElementName('background-img') ?>" style="background-image: url('<?= $this->getImg('man-glasses.jpg') ?>');">
+
+
+<div class="<?= $this->getElementName('content') ?>">
+<h2 class="<?= $this->getElementName('title') ?>"><?= $this->getData("title") ?></h2>
+<div class="<?= $this->getElementName('columnContainer') ?>">
+    <div class="<?= $this->getElementName('column2') ?>">
+        <p class="<?= $this->getElementName('leftColumnText') ?>"><?= $this->getData("leftColumnText") ?></p>
+    </div>
+    <div class="<?= $this->getElementName('column2') ?>">
+        <p class="<?= $this->getElementName('rightColumnText') ?>"><?= $this->getData("rightColumnText") ?></p>
+    </div>
+</div>
+</div>
+
+</div>
+

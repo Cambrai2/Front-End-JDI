@@ -6,16 +6,16 @@ $this: ".TextSideImage";
   position: relative;
 
   &__content {
-    position: absolute;
-    top: 0;
+
+    overflow:auto;
     width: 100%;
-    height: 100%;
+    padding-bottom:25px;
   }
   strong, b{
     font-weight:800;
   }
   &__title {
-    font-size: 60px;
+    font-size: 50px;
     color: black;
     margin-top: 40px;
     text-align:center;
@@ -33,10 +33,6 @@ $this: ".TextSideImage";
     height: 100%;
     background-position: center center;
     background-size: cover;
-  }
-
-  &__itemContainer {
-    padding:0% 15% 5% 15%;
   }
 
   &__subTitle0 {
@@ -79,12 +75,23 @@ $this: ".TextSideImage";
     color:grey;
     text-align:right;
     font-size:15px;
+    width:75%;
+    float:right;
   }
 
   &__subText1 {
     color:grey;
     text-align:left;
     font-size:15px;
+    width:75%;
+    float:left;
+  }
+
+  &__subImage {
+    display: block;
+    margin: auto;
+    padding: 20%;
+    filter:invert(1);
   }
   @include breakpoint(small only) {
     &__title {

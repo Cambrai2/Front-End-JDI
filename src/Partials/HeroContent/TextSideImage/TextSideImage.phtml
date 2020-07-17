@@ -29,22 +29,17 @@ use ProtectedNet\FrontendTest\Partials\HeroContent\TextSideImage\TextSideImage;
     <?php $count = 1; ?>
       <?php foreach($this->getSubElements() as $key => $subElement): ?>
         <?php $count = ($count + 1) % 2; ?>
-        <?php if ($count == 0): ?>
+
           <div class="<?= $this->getElementName('subItem') ?>">
-          <div class="<?= $this->getElementName('subImageContainer').$count ?>"></div>
+          <div class="<?= $this->getElementName('subImageContainer').$count ?>">
+          <img class="<?= $this->getElementName('subImage') ?>" src=<?= $this->getImg($subElement["subImage"]); ?>></img>
+          </div>
         <h3 class="<?= $this->getElementName('subTitle').$count ?>"><?= $subElement["subTitle"] ?></h3>
-        <br>
         <p class="<?= $this->getElementName('subText').$count ?>"><?= $subElement["subText"] ?></p>
 
       </div>
-        <?php else: ?>
-          <div class="<?= $this->getElementName('subItem') ?>">
-          <div class="<?= $this->getElementName('subImageContainer').$count ?>"></div>
-        <h3 class="<?= $this->getElementName('subTitle').$count ?>"><?= $subElement["subTitle"] ?></h3>
-        <br>
-        <p class="<?= $this->getElementName('subText').$count ?>"><?= $subElement["subText"] ?></p>
-      </div>
-        <?php endif; ?>
+
+
         <?php endforeach; ?>
     </div>
   </div>
