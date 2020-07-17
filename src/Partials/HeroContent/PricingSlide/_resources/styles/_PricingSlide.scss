@@ -1,0 +1,112 @@
+$this: ".pricingslide";
+
+#{$this} {
+
+  &__content {
+    padding:25px 5% 25px 5%;
+    overflow:auto;
+  }
+  * {
+    font-family:'raleway', sans-serif !important;
+  }
+
+  &__titleBlock {
+    width:25%;
+    float:left;
+    padding-right:15px;
+  }
+
+  &__title {
+    font-size:50px;
+    text-align:right;
+    line-height:1;
+    margin-top:25px;
+  }
+
+  &__subTitle {
+    font-size:15px;
+    text-align:right;
+    line-height:1;
+    margin-top:25px;
+  }
+
+  &__optionsBlock {
+    width:75%;
+    float:left;
+    display:flex;
+  }
+
+  &__option {
+    padding-left:15px;
+    padding-right:15px;
+    width:33%;
+    float:left;
+    flex: 1;
+  }
+
+  &__optionTop {
+    padding:25px;
+    background-color: #f6f6f6;
+    overflow:auto;
+    text-align:center;
+    border:0.5px solid #f6f6f6;
+    height:40%;
+  }
+
+  &__optionType {
+    font-family:'raleway', sans-serif;
+    font-size:30px;
+    color:#23ba85;
+    font-weight:800;
+  }
+
+  &__optionPrice {
+    font-family:'raleway', sans-serif;
+    font-size:50px;
+    font-weight:800;
+  }
+
+  &__optionDesc {
+    font-family:'raleway', sans-serif;
+    font-weight:600;
+    font-size:15px;
+    color:gray;
+  }
+
+  &__optionBottom {
+    background-color:#363636;
+    padding:25px;
+    height:60%;
+    position: relative;
+  }
+
+  &__optionBotText {
+    color:white;
+    font-weight:600;
+    text-align:center;
+    line-height:2;
+  }
+
+  &__optionLink {
+      color:white;
+      padding:15px;
+      background-color: #23ba85;
+      background: linear-gradient(to right, #23ba85 50%, #1a996c 50%);
+    background-size: 200% 200%;
+    background-position:left bottom;
+      display: inline-block;
+      width:100%;
+      border-radius: 5%;
+      text-align:center;
+      position: relative;
+      bottom:0px;
+      font-weight:600;
+      transition:all 1s ease;
+  }
+
+  &__optionLink:hover {
+    color:white;
+    background-position:right top;
+
+}
+}

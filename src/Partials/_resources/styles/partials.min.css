@@ -1,3 +1,97 @@
+.pricingslide__content {
+  padding: 25px 5% 25px 5%;
+  overflow: auto; }
+
+.pricingslide * {
+  font-family: 'raleway', sans-serif !important; }
+
+.pricingslide__titleBlock {
+  width: 25%;
+  float: left;
+  padding-right: 15px; }
+
+.pricingslide__title {
+  font-size: 50px;
+  text-align: right;
+  line-height: 1;
+  margin-top: 25px; }
+
+.pricingslide__subTitle {
+  font-size: 15px;
+  text-align: right;
+  line-height: 1;
+  margin-top: 25px; }
+
+.pricingslide__optionsBlock {
+  width: 75%;
+  float: left;
+  -js-display: flex;
+  display: flex; }
+
+.pricingslide__option {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 33%;
+  float: left;
+  flex: 1; }
+
+.pricingslide__optionTop {
+  padding: 25px;
+  background-color: #f6f6f6;
+  overflow: auto;
+  text-align: center;
+  border: 0.5px solid #f6f6f6;
+  height: 40%; }
+
+.pricingslide__optionType {
+  font-family: 'raleway', sans-serif;
+  font-size: 30px;
+  color: #23ba85;
+  font-weight: 800; }
+
+.pricingslide__optionPrice {
+  font-family: 'raleway', sans-serif;
+  font-size: 50px;
+  font-weight: 800; }
+
+.pricingslide__optionDesc {
+  font-family: 'raleway', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: gray; }
+
+.pricingslide__optionBottom {
+  background-color: #363636;
+  padding: 25px;
+  height: 60%;
+  position: relative; }
+
+.pricingslide__optionBotText {
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2; }
+
+.pricingslide__optionLink {
+  color: white;
+  padding: 15px;
+  background-color: #23ba85;
+  background: linear-gradient(to right, #23ba85 50%, #1a996c 50%);
+  background-size: 200% 200%;
+  background-position: left bottom;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5%;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  font-weight: 600;
+  transition: all 1s ease; }
+
+.pricingslide__optionLink:hover {
+  color: white;
+  background-position: right top; }
+
 .slide-one {
   position: relative; }
   .slide-one__content {
@@ -57,6 +151,125 @@
   @media screen and (max-width: 39.99875em) {
     .slide-two__title {
       font-size: 30px; } }
+
+.StatsSlide__background-img {
+  overflow: auto;
+  object-fit: cover;
+  padding-bottom: 25px; }
+
+.StatsSlide__title {
+  text-align: center;
+  color: white;
+  padding-top: 40px;
+  font-size: 50px; }
+
+.StatsSlide__column2 {
+  float: left;
+  width: 50%; }
+
+.StatsSlide__leftColumnText {
+  text-align: right;
+  color: #23ba85;
+  font-size: 20px;
+  margin-right: 15px;
+  margin-left: 15%; }
+
+.StatsSlide__rightColumnText {
+  text-align: left;
+  color: white;
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: 5px;
+  margin-right: 15%; }
+
+.StatsSlide__columnContainer {
+  -js-display: flex;
+  display: flex;
+  overflow: auto;
+  padding: 25px;
+  width: 100%; }
+
+.StatsSlide__subStatContainer0 {
+  border-radius: 50%;
+  float: right;
+  text-align: right; }
+
+.StatsSlide__subStatContainer1 {
+  border-radius: 50%;
+  float: left;
+  text-align: left; }
+
+.StatsSlide__subSvg1 {
+  transform: rotate(-90deg);
+  float: right; }
+
+.StatsSlide__SvgText {
+  float: right; }
+
+.StatsSlide__subItem {
+  flex: 1;
+  width: 50%;
+  max-width: 50%;
+  float: left;
+  padding: 25px; }
+
+.StatsSlide__subCircleContainer {
+  overflow: auto;
+  position: relative; }
+
+.StatsSlide__circleText {
+  font-family: "raleway", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 120px;
+  color: #23ba85;
+  text-align: center;
+  font-size: 30px;
+  margin: 0; }
+
+.StatsSlide__subTitle0 {
+  font-family: "raleway", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 20px;
+  text-align: right;
+  margin-right: 25px; }
+
+.StatsSlide__subText0 {
+  font-family: "raleway", sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 20px;
+  text-align: right;
+  margin-right: 25px; }
+
+.StatsSlide__subTitle1 {
+  font-family: "raleway", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 25px; }
+
+.StatsSlide__subText1 {
+  font-family: "raleway", sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 25px; }
+
+.StatsSlide__subTextContainer0 {
+  float: right;
+  overflow: auto;
+  width: 75%; }
+
+.StatsSlide__subTextContainer1 {
+  float: left;
+  overflow: auto;
+  width: 75%; }
 
 .TextOnImage__background-img {
   overflow: auto;

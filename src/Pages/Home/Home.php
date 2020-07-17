@@ -8,6 +8,8 @@ use ProtectedNet\FrontendTest\Partials\HeroContent\SlideThree\SlideThree;
 use ProtectedNet\FrontendTest\Partials\HeroContent\SlideTwo\SlideTwo;
 use ProtectedNet\FrontendTest\Partials\HeroContent\TextSideImage\TextSideImage;
 use ProtectedNet\FrontendTest\Partials\HeroContent\TextOnImage\TextOnImage;
+use ProtectedNet\FrontendTest\Partials\HeroContent\PricingSlide\PricingSlide;
+use ProtectedNet\FrontendTest\Partials\HeroContent\StatsSlide\StatsSlide;
 
 class Home extends AbstractPage
 {
@@ -31,5 +33,19 @@ class Home extends AbstractPage
       $this->_TextOnImage = TextOnImage::i()->setData($passValues);
     
       return $this->_TextOnImage;
+  }
+
+  protected function _getPricingSlide()
+  {
+      $this->_PricingSlide = PricingSlide::i();
+    
+      return $this->_PricingSlide;
+  }
+
+  protected function _getStatsSlide()
+  {
+      $this->_StatsSlide = StatsSlide::i();
+    
+      return $this->_StatsSlide;
   }
 }

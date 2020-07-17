@@ -6280,3 +6280,7 @@ ol.list-upper-roman {
     margin-left: 95px !important; }
   .ml-mdo-20 {
     margin-left: 100px !important; } }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("RalewayRaleway-regular.ttf") format("truetype"); }

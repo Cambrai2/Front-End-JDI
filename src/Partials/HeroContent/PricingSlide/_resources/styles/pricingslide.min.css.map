@@ -1,0 +1,1 @@
+{"version":3,"sources":["Partials/HeroContent/PricingSlide/_resources/styles/PricingSlide.min.css"],"names":[],"mappings":"AAAA;EACE,WAAW;EACX,YAAY;EACZ,kCAAkC;EAClC,sBAAsB,EAAE","file":"PricingSlide.min.css","sourcesContent":[".pricingslide__background-img {\n  width: 100%;\n  height: 100%;\n  background-position: center center;\n  background-size: cover; }\n"]}
