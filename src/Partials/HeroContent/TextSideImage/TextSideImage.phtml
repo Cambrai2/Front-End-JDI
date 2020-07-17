@@ -1,0 +1,51 @@
+<?php
+/** @var $this TextSideImage */
+
+use ProtectedNet\FrontendTest\Partials\HeroContent\TextSideImage\TextSideImage;
+?>
+
+<!--
+<div class="<?= $this->getElementName('background-img') ?>" style="background-image: url('<?= $this->getImg('slider-1.jpg') ?>');"></div>
+
+
+<div class="<?= $this->getElementName('content') ?>">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell medium-6">
+        <h1 class="<?= $this->getElementName('title') ?>"><?= $this->getData("title") ?></h1>
+        <p class="<?= $this->getElementName('text') ?>"><?= $this->getData("paragraph") ?></p>
+        <ul class="<?= $this->getElementName('list') ?>">
+          <li class="<?= $this->getElementName('list', 'item') ?>"><?= $this->getData("list1") ?></li>
+          <li class="<?= $this->getElementName('list', 'item') ?>"><?= $this->getData("list2") ?></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div> -->
+<div>
+  <div class="<?= $this->getElementName('content') ?>">
+    <h2 class="<?= $this->getElementName('title') ?>"><?= $this->getData("title") ?></h2>
+    <div class="<?= $this->getElementName('itemContainer') ?>">
+    <?php $count = 1; ?>
+      <?php foreach($this->getSubElements() as $key => $subElement): ?>
+        <?php $count = ($count + 1) % 2; ?>
+        <?php if ($count == 0): ?>
+          <div class="<?= $this->getElementName('subItem') ?>">
+          <div class="<?= $this->getElementName('subImageContainer').$count ?>"></div>
+        <h3 class="<?= $this->getElementName('subTitle').$count ?>"><?= $subElement["subTitle"] ?></h3>
+        <br>
+        <p class="<?= $this->getElementName('subText').$count ?>"><?= $subElement["subText"] ?></p>
+
+      </div>
+        <?php else: ?>
+          <div class="<?= $this->getElementName('subItem') ?>">
+          <div class="<?= $this->getElementName('subImageContainer').$count ?>"></div>
+        <h3 class="<?= $this->getElementName('subTitle').$count ?>"><?= $subElement["subTitle"] ?></h3>
+        <br>
+        <p class="<?= $this->getElementName('subText').$count ?>"><?= $subElement["subText"] ?></p>
+      </div>
+        <?php endif; ?>
+        <?php endforeach; ?>
+    </div>
+  </div>
+</div>

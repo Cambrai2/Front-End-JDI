@@ -5,6 +5,32 @@
 use ProtectedNet\FrontendTest\Pages\Home\Home;
 
 ?>
+<div>
+<?= $this->_getTextSideImage([
+    "title"=>"<b>About</b> Us",
+    "paragraph"=>"Paragraph Tested",
+    "repeatItems"=>[
+        "element0"=>[
+            "subTitle"=>"Lorem Ipsum",
+            "subText"=>"More Lorem Ipsum",
+            "subImage"=>"test.png"
+        ],
+        "element1"=>[
+            "subTitle"=>"Lorem Ipsum APSUM",
+            "subText"=>"More Lorem Ipsum",
+            "subImage"=>"test.png"
+        ],
+        "element2"=>[
+            "subTitle"=>"Lorem Ipsum",
+            "subText"=>"More Lorem Ipsum",
+            "subImage"=>"test.png"
+        ],
+        "element3"=>[
+            "subTitle"=>"Lorem Ipsum APSUM",
+            "subText"=>"More Lorem Ipsum",
+            "subImage"=>"test.png"
+        ],
+        ]
+]); ?>
 
-<h1>Page content goes here</h1>
-
+</div>

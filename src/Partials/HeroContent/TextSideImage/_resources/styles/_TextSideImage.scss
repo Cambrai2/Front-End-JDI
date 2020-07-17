@@ -1,0 +1,103 @@
+@import "base";
+
+$this: ".TextSideImage";
+
+#{$this} {
+  position: relative;
+
+  &__content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  strong, b{
+    font-weight:800;
+  }
+  &__title {
+    font-size: 60px;
+    color: black;
+    margin-top: 40px;
+    text-align:center;
+  }
+
+
+  &__list {
+    padding: 0;
+    color: #23ba85;
+    font-size: 23px;
+  }
+
+  &__background-img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__itemContainer {
+    padding:0% 15% 5% 15%;
+  }
+
+  &__subTitle0 {
+    font-weight:900;
+    color: #23ba85;
+    font-size:20px;
+    text-align:right;
+  }
+  &__subTitle1 {
+    font-weight:900;
+    color: #23ba85;
+    font-size:20px;
+    text-align:left;
+  }
+  &__subItem {
+    width:50%;
+    float:left;
+    padding:15px;
+  }
+
+  &__subImageContainer0 {
+    height:100px;
+    width:100px;
+    background-color: #23ba85;
+    float:right;
+    border-radius: 50%;
+    margin-left:25px;
+  }
+
+  &__subImageContainer1 {
+    height:100px;
+    width:100px;
+    background-color: #23ba85;
+    float:left;
+    border-radius: 50%;
+    margin-right:25px;
+  }
+
+  &__subText0 {
+    color:grey;
+    text-align:right;
+    font-size:15px;
+  }
+
+  &__subText1 {
+    color:grey;
+    text-align:left;
+    font-size:15px;
+  }
+  @include breakpoint(small only) {
+    &__title {
+      font-size: 25px;
+      margin-top: 130px;
+    }
+
+    &__text {
+      font-size: 17px;
+    }
+
+    &__list {
+      font-size: 17px;
+    }
+  }
+}
