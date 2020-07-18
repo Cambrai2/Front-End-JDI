@@ -141,5 +141,9 @@ $this: ".slide-two";
     &__button0, &__button1 {
       float:left;
     }
+
+    &__button1 p{
+      padding:0px 18px;
+    }
   }
 }

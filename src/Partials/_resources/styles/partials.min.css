@@ -267,7 +267,9 @@
     .slide-two__btnContainer {
       display: block; }
     .slide-two__button0, .slide-two__button1 {
-      float: left; } }
+      float: left; }
+    .slide-two__button1 p {
+      padding: 0px 18px; } }
 
 .StatsSlide__background-img {
   overflow: auto;
