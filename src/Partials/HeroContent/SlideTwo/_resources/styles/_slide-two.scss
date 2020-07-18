@@ -1,5 +1,17 @@
 $this: ".slide-two";
-
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+  position: absolute;
+  top: 30%;
+  left:0px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 #{$this} {
   position: relative;
 
@@ -25,9 +37,109 @@ $this: ".slide-two";
     background-size: cover;
   }
 
+  &__btnContainer {
+    display:flex;
+    width:100%;
+  }
+
+  &__column {
+    width:50%;
+    float:left;
+    flex:1;
+    padding:15px;
+  }
+
+  &__button0 {
+    float:right;
+    font-family:'raleway', sans-serif;
+    background-image: linear-gradient(to right, #23ba85 50%, #363636 50%);
+    background-size: 150% 100%;
+    background-position:left bottom;
+    color:white;
+    padding:15px 0px;
+    transition:all 1s ease;
+    position:relative;
+  }
+
+  &__button0:hover {
+    float:right;
+    font-family:'raleway', sans-serif;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color:white;
+  }
+
+  &__button1:hover {
+    float:left;
+    font-family:'raleway', sans-serif;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color:white;
+  }
+
+  &__button0 p {
+    margin:0;
+    float:left;
+    text-align: center;
+    padding:0px 15px;
+    //line-height:1;
+  }
+  &__button0 .icon {
+    margin:0;
+    float:left;
+    text-align:center;
+    line-height:1;
+    height:16px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+  }
+  &__button1 {
+    float:left;
+    font-family:'raleway', sans-serif;
+    background-image: linear-gradient(to right, #23ba85 50%, #363636 50%);
+    background-size: 150% 100%;
+    background-position:left bottom;
+    color:white;
+    padding:15px 0px;
+    transition:all 1s ease;
+    position:relative;
+  }
+
+  &__button1 p {
+    margin:0;
+    float:left;
+    text-align: center;
+    //line-height:1;
+    padding:0px 15px;
+  }
+  &__button1 .icon {
+    margin:0;
+    float:left;
+    text-align:center;
+    line-height:1;
+    height:16px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+  }
   @include breakpoint(small only) {
     &__title {
       font-size: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    &__column {
+      width:100%;
+      display:block;
+      overflow:auto;
+    }
+    &__btnContainer {
+      display:block;
+    }
+    &__button0, &__button1 {
+      float:left;
     }
   }
 }

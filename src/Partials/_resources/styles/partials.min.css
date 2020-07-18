@@ -92,6 +92,27 @@
   color: white;
   background-position: right top; }
 
+@media only screen and (max-width: 768px) {
+  .pricingslide__titleBlock, .pricingslide__optionsBlock {
+    width: 100%; }
+  .pricingslide__title {
+    text-align: center; }
+  .pricingslide__subTitle {
+    text-align: center; }
+  .pricingslide__content {
+    padding: 25px 0px; } }
+
+@media only screen and (max-width: 375px) {
+  .pricingslide__option {
+    width: 100%;
+    margin-bottom: 25px; }
+  .pricingslide__optionsBlock {
+    display: block; }
+  .pricingslide__optionTop, .pricingslide__optionBottom {
+    height: auto; }
+  .pricingslide__titleBlock {
+    padding-right: 0; } }
+
 .slide-one {
   position: relative; }
   .slide-one__content {
@@ -99,6 +120,11 @@
     top: 0;
     width: 100%;
     height: 100%; }
+  @media only screen and (max-width: 768px) {
+    .slide-one__title, .slide-one__text, .slide-one__list {
+      padding-left: 25px !important; }
+    .slide-one .medium-6 {
+      width: 100% !important; } }
   .slide-one__title {
     font-size: 40px;
     color: white;
@@ -130,6 +156,19 @@
   background-position: center center;
   background-size: cover; }
 
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+  position: absolute;
+  top: 30%;
+  left: 0px; }
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+
 .slide-two {
   position: relative; }
   .slide-two__content {
@@ -148,13 +187,92 @@
     height: 100%;
     background-position: center center;
     background-size: cover; }
+  .slide-two__btnContainer {
+    -js-display: flex;
+    display: flex;
+    width: 100%; }
+  .slide-two__column {
+    width: 50%;
+    float: left;
+    flex: 1;
+    padding: 15px; }
+  .slide-two__button0 {
+    float: right;
+    font-family: 'raleway', sans-serif;
+    background-image: linear-gradient(to right, #23ba85 50%, #363636 50%);
+    background-size: 150% 100%;
+    background-position: left bottom;
+    color: white;
+    padding: 15px 0px;
+    transition: all 1s ease;
+    position: relative; }
+  .slide-two__button0:hover {
+    float: right;
+    font-family: 'raleway', sans-serif;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white; }
+  .slide-two__button1:hover {
+    float: left;
+    font-family: 'raleway', sans-serif;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white; }
+  .slide-two__button0 p {
+    margin: 0;
+    float: left;
+    text-align: center;
+    padding: 0px 15px; }
+  .slide-two__button0 .icon {
+    margin: 0;
+    float: left;
+    text-align: center;
+    line-height: 1;
+    height: 16px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative; }
+  .slide-two__button1 {
+    float: left;
+    font-family: 'raleway', sans-serif;
+    background-image: linear-gradient(to right, #23ba85 50%, #363636 50%);
+    background-size: 150% 100%;
+    background-position: left bottom;
+    color: white;
+    padding: 15px 0px;
+    transition: all 1s ease;
+    position: relative; }
+  .slide-two__button1 p {
+    margin: 0;
+    float: left;
+    text-align: center;
+    padding: 0px 15px; }
+  .slide-two__button1 .icon {
+    margin: 0;
+    float: left;
+    text-align: center;
+    line-height: 1;
+    height: 16px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative; }
   @media screen and (max-width: 39.99875em) {
     .slide-two__title {
       font-size: 30px; } }
+  @media only screen and (max-width: 375px) {
+    .slide-two__column {
+      width: 100%;
+      display: block;
+      overflow: auto; }
+    .slide-two__btnContainer {
+      display: block; }
+    .slide-two__button0, .slide-two__button1 {
+      float: left; } }
 
 .StatsSlide__background-img {
   overflow: auto;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
   padding-bottom: 25px; }
 
 .StatsSlide__title {
@@ -183,8 +301,6 @@
   margin-right: 15%; }
 
 .StatsSlide__columnContainer {
-  -js-display: flex;
-  display: flex;
   overflow: auto;
   padding: 25px;
   width: 100%; }
@@ -271,6 +387,24 @@
   overflow: auto;
   width: 75%; }
 
+@media only screen and (max-width: 768px) {
+  .StatsSlide__columnContainer {
+    padding: 15px 0px; }
+  .StatsSlide__subItem {
+    width: 100%;
+    max-width: 100%; } }
+
+@media only screen and (max-width: 375px) {
+  .StatsSlide__subStatContainer0 {
+    float: left; }
+  .StatsSlide__subStatContainer1 {
+    float: right; }
+  .StatsSlide__subTextContainer0, .StatsSlide__subTextContainer1 {
+    float: right;
+    width: auto; }
+  .StatsSlide__subTitle0, .StatsSlide__subText0, .StatsSlide__subTitle1, .StatsSlide__subText1 {
+    margin: 0; } }
+
 .TextOnImage__background-img {
   overflow: auto;
   object-fit: cover;
@@ -300,6 +434,23 @@
   margin-left: 15px;
   margin-top: 5px;
   margin-right: 15%; }
+
+@media only screen and (max-width: 768px) {
+  .TextOnImage__column2 {
+    width: 100%;
+    padding: 25px; }
+  .TextOnImage__leftColumnText, .TextOnImage__rightColumnText {
+    text-align: center;
+    margin: 0; } }
+
+@media only screen and (max-width: 375px) {
+  .TextOnImage__background-img {
+    background-position: center;
+    background-size: cover; }
+  .TextOnImage__leftColumnText {
+    font-size: 16px; }
+  .TextOnImage__column2 {
+    padding: 5px 15px; } }
 
 .TextSideImage {
   position: relative; }
@@ -376,3 +527,19 @@
       font-size: 17px; }
     .TextSideImage__list {
       font-size: 17px; } }
+  @media only screen and (max-width: 768px) {
+    .TextSideImage__subItem {
+      width: 100%;
+      max-width: 100%;
+      padding: 15px; } }
+  @media only screen and (max-width: 375px) {
+    .TextSideImage__title {
+      margin-top: 50px; }
+    .TextSideImage__subImageContainer0, .TextSideImage__subImageContainer1 {
+      float: left;
+      text-align: center;
+      margin: 0; }
+    .TextSideImage__subTitle0, .TextSideImage__subText0, .TextSideImage__subTitle1, .TextSideImage__subText1 {
+      width: 65%;
+      float: right;
+      text-align: right; } }

@@ -12,6 +12,18 @@ $this: ".slide-one";
     height: 100%;
   }
 
+  
+  @media only screen and (max-width: 768px) {
+    &__title, &__text, &__list {
+      padding-left:25px !important;
+
+    }
+
+    .medium-6 {
+      width:100% !important;
+    }
+  }
+
   &__title {
     font-size: 40px;
     color: white;

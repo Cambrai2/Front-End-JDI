@@ -35,4 +35,34 @@ $this: ".TextOnImage";
     margin-top:5px;
     margin-right:15%;
 }
+
+@media only screen and (max-width: 768px) {
+  &__column2 {
+    width:100%;
+    padding:25px;
+    
+  }
+
+  &__leftColumnText, &__rightColumnText {
+    text-align:center;
+    margin:0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+&__background-img {
+  background-position: center;
+  background-size: cover;
+
+}
+
+&__leftColumnText {
+  font-size:16px;
+}
+
+&__column2 {
+  padding:5px 15px;
+}
+
+}
 }

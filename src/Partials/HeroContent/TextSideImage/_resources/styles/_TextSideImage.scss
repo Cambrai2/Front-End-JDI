@@ -5,6 +5,7 @@ $this: ".TextSideImage";
 #{$this} {
   position: relative;
 
+
   &__content {
 
     overflow:auto;
@@ -105,6 +106,33 @@ $this: ".TextSideImage";
 
     &__list {
       font-size: 17px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    &__subItem {
+      width:100%;
+      max-width:100%;
+      padding:15px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    &__title {
+      margin-top:50px;
+    }
+
+    &__subImageContainer0, &__subImageContainer1{
+      float:left;
+      text-align:center;
+      margin:0;
+      
+    }
+
+    &__subTitle0, &__subText0, &__subTitle1, &__subText1 {
+      width:65%;
+      float:right;
+      text-align:right;
     }
   }
 }

@@ -3,7 +3,8 @@ $this: ".StatsSlide";
 #{$this} {
   &__background-img {
     overflow:auto;
-    object-fit: cover;
+    background-size:cover;
+    background-position: center;
     padding-bottom:25px;
   }
   
@@ -37,7 +38,6 @@ $this: ".StatsSlide";
 }
 
 &__columnContainer {
-  display:flex;
   overflow:auto;
   padding: 25px;
   width:100%;
@@ -130,6 +130,35 @@ $this: ".StatsSlide";
   float:left;
   overflow:auto;
   width:75%;
+}
+
+@media only screen and (max-width: 768px) {
+  &__columnContainer {
+    padding:15px 0px;
+  }
+
+  &__subItem {
+    width:100%;
+  max-width:100%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  &__subStatContainer0 {
+    float:left;
+  }
+  &__subStatContainer1 {
+    float:right;
+  }
+
+  &__subTextContainer0, &__subTextContainer1 {
+    float:right;
+    width:auto;
+  }
+
+  &__subTitle0, &__subText0, &__subTitle1, &__subText1 {
+    margin:0;
+  }
 }
 
 }
