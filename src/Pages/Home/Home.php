@@ -6,7 +6,7 @@ use ProtectedNet\FrontendTest\Pages\AbstractPage;
 use ProtectedNet\FrontendTest\Partials\HeroContent\SlideOne\SlideOne;
 use ProtectedNet\FrontendTest\Partials\HeroContent\SlideThree\SlideThree;
 use ProtectedNet\FrontendTest\Partials\HeroContent\SlideTwo\SlideTwo;
-use ProtectedNet\FrontendTest\Partials\HeroContent\TextSideImage\TextSideImage;
+use ProtectedNet\FrontendTest\Partials\HeroContent\AboutUs\AboutUs;
 use ProtectedNet\FrontendTest\Partials\HeroContent\TextOnImage\TextOnImage;
 use ProtectedNet\FrontendTest\Partials\HeroContent\PricingSlide\PricingSlide;
 use ProtectedNet\FrontendTest\Partials\HeroContent\StatsSlide\StatsSlide;
@@ -21,16 +21,16 @@ class Home extends AbstractPage
       ->appendSlide(SlideThree::i());
   }
 
-  protected function _getTextSideImage(array $passValues)
+  protected function _getAboutUs()
   {
-      $this->_TextSideImage = TextSideImage::i()->setData($passValues);
+      $this->_AboutUs = AboutUs::i();
     
-      return $this->_TextSideImage;
+      return $this->_AboutUs;
   }
 
-  protected function _getTextOnImage(array $passValues)
+  protected function _getTextOnImage()
   {
-      $this->_TextOnImage = TextOnImage::i()->setData($passValues);
+      $this->_TextOnImage = TextOnImage::i();
     
       return $this->_TextOnImage;
   }

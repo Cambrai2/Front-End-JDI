@@ -6284,3 +6284,6 @@ ol.list-upper-roman {
 @font-face {
   font-family: 'Raleway';
   src: url("RalewayRaleway-regular.ttf") format("truetype"); }
+
+* {
+  font-family: 'raleway', sans-serif; }

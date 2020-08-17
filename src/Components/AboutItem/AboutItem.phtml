@@ -1,0 +1,15 @@
+<?php
+/** @var $this AboutItem */
+
+use ProtectedNet\FrontendTest\Components\AboutItem\AboutItem;
+
+?>
+
+<div class="<?= $this->getElementName('subItem') ?>">
+          <div class="<?= $this->getElementName('subImageContainer').$count ?>">
+          <img class="<?= $this->getElementName('subImage') ?>" src=<?= $this->getImg($this->getSvg()); ?>></img>
+          </div>
+        <h3 class="<?= $this->getElementName('subTitle') ?>"><?= $this->getTitle() ?></h3>
+        <p class="<?= $this->getElementName('subText') ?>"><?= $this->getText() ?></p>
+
+      </div>

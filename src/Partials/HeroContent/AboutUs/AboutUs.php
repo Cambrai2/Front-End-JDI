@@ -1,16 +1,16 @@
 <?php
-namespace ProtectedNet\FrontendTest\Partials\HeroContent\TextSideImage;
+namespace ProtectedNet\FrontendTest\Partials\HeroContent\AboutUs;
 
 use ProtectedNet\FrontendTest\Partials\AbstractPartial;
 
-class TextSideImage extends AbstractPartial
+class AboutUs extends AbstractPartial
 {
   protected $contentValues = array("a"=>"alpha", "b"=>"bravo");
 
   /** @return string */
   public function getBlockName(): string
   {
-    return 'TextSideImage';
+    return 'about';
   }
 
   public function setData(array $Values)
@@ -24,10 +24,6 @@ class TextSideImage extends AbstractPartial
     return $this->contentValues[$key];
   }
 
-  public function getSubElements(): array
-  {
-    return $this->contentValues["repeatItems"];
-  }
   /** @return $this */
   public static function i()
   {

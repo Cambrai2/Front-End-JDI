@@ -1,0 +1,22 @@
+<?php
+/** @var $this Statistic */
+
+use ProtectedNet\FrontendTest\Components\Statistic\Statistic;
+
+?>
+
+<div class="<?= $this->getElementName('subItem') ?>">
+        <div class="<?= $this->getElementName('subStatContainer') ?>">
+          <div class="<?= $this->getElementName('subCircleContainer') ?>">
+            <svg class="<?= $this->getElementName('subSvg') ?>" width="120" height="120" viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="54" fill="none" stroke="white" stroke-width="10" />
+              <circle cx="60" cy="60" r="54" fill="none" stroke="#23ba85" stroke-width="10" stroke-dasharray="339.292" stroke-dashoffset="<?= $this->getPercentVal() ?>" transform />
+            </svg>
+            <p class="<?= $this->getElementName('circleText') ?>"><?= $this->getPercent() ?>%</p>
+          </div>
+        </div>
+        <div class="<?= $this->getElementName('subTextContainer') ?>">
+          <h3 class="<?= $this->getElementName('subTitle') ?>"><?= $this->getTitle() ?></h3>
+          <p class="<?= $this->getElementName('subText') ?>"><?= $this->getText() ?></p>
+        </div>
+</div>

@@ -6,14 +6,17 @@ $this: ".pricingslide";
     padding:25px 5% 25px 5%;
     overflow:auto;
   }
-  * {
-    font-family:'raleway', sans-serif !important;
-  }
 
   &__titleBlock {
-    width:25%;
+
     float:left;
     padding-right:15px;
+  }
+
+  &__optionsBlock {
+
+    float:left;
+    display:flex;
   }
 
   &__title {
@@ -21,6 +24,7 @@ $this: ".pricingslide";
     text-align:right;
     line-height:1;
     margin-top:25px;
+
   }
 
   &__subTitle {
@@ -29,11 +33,6 @@ $this: ".pricingslide";
     margin-top:25px;
   }
 
-  &__optionsBlock {
-    width:75%;
-    float:left;
-    display:flex;
-  }
 
   &__option {
     padding-left:15px;
@@ -49,24 +48,21 @@ $this: ".pricingslide";
     overflow:auto;
     text-align:center;
     border:0.5px solid #f6f6f6;
-    height:40%;
+
   }
 
   &__optionType {
-    font-family:'raleway', sans-serif;
     font-size:30px;
     color:#23ba85;
     font-weight:800;
   }
 
   &__optionPrice {
-    font-family:'raleway', sans-serif;
     font-size:50px;
     font-weight:800;
   }
 
   &__optionDesc {
-    font-family:'raleway', sans-serif;
     font-weight:600;
     font-size:15px;
     color:gray;
@@ -75,7 +71,7 @@ $this: ".pricingslide";
   &__optionBottom {
     background-color:#363636;
     padding:25px;
-    height:60%;
+
     position: relative;
   }
 
@@ -91,8 +87,8 @@ $this: ".pricingslide";
       padding:15px;
       background-color: #23ba85;
       background: linear-gradient(to right, #23ba85 50%, #1a996c 50%);
-    background-size: 200% 200%;
-    background-position:left bottom;
+      background-size: 200% 200%;
+      background-position:left bottom;
       display: inline-block;
       width:100%;
       border-radius: 5%;
@@ -101,35 +97,36 @@ $this: ".pricingslide";
       bottom:0px;
       font-weight:600;
       transition:all 1s ease;
-  }
 
-  &__optionLink:hover {
-    color:white;
+    &:hover {
     background-position:right top;
-
+    color:white;
 }
-
-@media only screen and (max-width: 768px) {
-  &__titleBlock, &__optionsBlock {
-    width:100%;
   }
 
-  &__title {
-    text-align:center;
-  }
+@include breakpoint(medium only) {
 
-  &__subTitle {
+  &__title, &__subTitle {
     text-align:center;
   }
 
   &__content {
-    padding:25px 0px;
+    padding:25px;
   }
+
+  &__optionTop, &__option {
+    padding:5px;
+  }
+
 }
 
-@media only screen and (max-width: 375px) {
+@include breakpoint(small only) {
+
+  &__title, &__subTitle {
+    text-align:center;
+  }
+
   &__option {
-    width:100%;
     margin-bottom:25px;
   }
 

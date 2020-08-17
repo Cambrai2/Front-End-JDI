@@ -3,6 +3,8 @@
 /** @var $this StatsSlide */
 
 use ProtectedNet\FrontendTest\Partials\HeroContent\StatsSlide\StatsSlide;
+use ProtectedNet\FrontendTest\Components\Statistic\Statistic;
+use Packaged\Dispatch\ResourceManager;
 ?>
 
 <div class="<?= $this->getElementName('background-img') ?>" style="background-image: url('<?= $this->getImg('plant.jpg') ?>');">
@@ -11,69 +13,28 @@ use ProtectedNet\FrontendTest\Partials\HeroContent\StatsSlide\StatsSlide;
   <div class="<?= $this->getElementName('content') ?>">
     <h2 class="<?= $this->getElementName('title') ?>">Site <b>stats</b></h2>
     <div class="<?= $this->getElementName('columnContainer') ?>">
-
-      <div class="<?= $this->getElementName('subItem') ?>">
-        <div class="<?= $this->getElementName('subStatContainer0') ?>">
-          <div class="<?= $this->getElementName('subCircleContainer') ?>">
-            <svg class="<?= $this->getElementName('subSvg1') ?>" width="120" height="120" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="54" fill="none" stroke="white" stroke-width="10" />
-              <circle cx="60" cy="60" r="54" fill="none" stroke="#23ba85" stroke-width="10" stroke-dasharray="339.292" stroke-dashoffset="84.823" transform />
-            </svg>
-            <p class="<?= $this->getElementName('circleText') ?>">75%</p>
-          </div>
-        </div>
-        <div class="<?= $this->getElementName('subTextContainer0') ?>">
-          <h3 class="<?= $this->getElementName('subTitle0') ?>">Excepteur sint occaecat</h3>
-          <p class="<?= $this->getElementName('subText0') ?>">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-        </div>
-      </div>
-
-      <div class="<?= $this->getElementName('subItem') ?>">
-        <div class="<?= $this->getElementName('subStatContainer1') ?>">
-          <div class="<?= $this->getElementName('subCircleContainer') ?>">
-            <svg class="<?= $this->getElementName('subSvg1') ?>" width="120" height="120" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="54" fill="none" stroke="white" stroke-width="10" />
-              <circle cx="60" cy="60" r="54" fill="none" stroke="#23ba85" stroke-width="10" stroke-dasharray="339.292" stroke-dashoffset="254.469" transform />
-            </svg>
-            <p class="<?= $this->getElementName('circleText') ?>">25%</p>
-          </div>
-        </div>
-        <div class="<?= $this->getElementName('subTextContainer1') ?>">
-          <h3 class="<?= $this->getElementName('subTitle1') ?>">Sed do eiusmod</h3>
-          <p class="<?= $this->getElementName('subText1') ?>">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-        </div>
-      </div>
-
-      <div class="<?= $this->getElementName('subItem') ?>">
-        <div class="<?= $this->getElementName('subStatContainer0') ?>">
-          <div class="<?= $this->getElementName('subCircleContainer') ?>">
-            <svg class="<?= $this->getElementName('subSvg1') ?>" width="120" height="120" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="54" fill="none" stroke="white" stroke-width="10" />
-              <circle cx="60" cy="60" r="54" fill="none" stroke="#23ba85" stroke-width="10" stroke-dasharray="339.292" stroke-dashoffset="169.646" transform />
-            </svg>
-            <p class="<?= $this->getElementName('circleText') ?>">50%</p>
-          </div>
-        </div>
-        <div class="<?= $this->getElementName('subTextContainer0') ?>">
-          <h3 class="<?= $this->getElementName('subTitle0') ?>">Lorem ipsum dolor sit amet</h3>
-          <p class="<?= $this->getElementName('subText0') ?>">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-        </div>
-      </div>
-
-      <div class="<?= $this->getElementName('subItem') ?>">
-        <div class="<?= $this->getElementName('subStatContainer1') ?>">
-          <div class="<?= $this->getElementName('subCircleContainer') ?>">
-            <svg class="<?= $this->getElementName('subSvg1') ?>" width="120" height="120" viewBox="0 0 120 120">
-              <circle cx="60" cy="60" r="54" fill="none" stroke="white" stroke-width="10" />
-              <circle cx="60" cy="60" r="54" fill="none" stroke="#23ba85" stroke-width="10" stroke-dasharray="339.292" stroke-dashoffset="84.823" transform />
-            </svg>
-            <p class="<?= $this->getElementName('circleText') ?>">75%</p>
-          </div>
-        </div>
-        <div class="<?= $this->getElementName('subTextContainer1') ?>">
-          <h3 class="<?= $this->getElementName('subTitle1') ?>">Tempor incididunt ut</h3>
-          <p class="<?= $this->getElementName('subText1') ?>">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-        </div>
-      </div>
-
+<?= 
+Statistic::i()
+  ->setTitle("Excepteur sint occaecat")
+  ->setText("Excepteur sint occaecat")
+  ->setPercent("75");
+  ?><?=
+  Statistic::i()
+  ->setTitle("Excepteur sint occaecat")
+  ->setText("Excepteur sint occaecat")
+  ->setPercent("25")
+  ->rightSide();
+  ?><?=
+  Statistic::i()
+  ->setTitle("Excepteur sint occaecat")
+  ->setText("Excepteur sint occaecat")
+  ->setPercent("50");
+  ?><?=
+  Statistic::i()
+  ->setTitle("Excepteur sint occaecat")
+  ->setText("Excepteur sint occaecat")
+  ->setPercent("75")
+  ->rightSide();
+?>
     </div>
+  </div>

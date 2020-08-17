@@ -1,0 +1,96 @@
+@import 'base';
+
+$this: ".aboutItem";
+
+#{$this} {
+  position: relative;
+
+&--right &__subItem &__SubImageContainer {
+  float:left !important;
+}
+
+&--right &__subItem &__subTitle, &--right &__subItem &__subText {
+  text-align:left;
+  margin-right:0px;
+}
+
+&--right &__subItem &__subText {
+  float:left;
+}
+  strong, b{
+    font-weight:800;
+  }
+
+  &__title {
+    font-size: 50px;
+    color: black;
+    margin-top: 40px;
+    text-align:center;
+  }
+
+  &__subTitle {
+    font-weight:900;
+    color: #23ba85;
+    font-size:20px;
+    text-align:right;
+  }
+
+  &__subItem {
+    width:50%;
+    float:left;
+    padding:15px;
+  }
+
+  &__subImageContainer {
+    height:100px;
+    width:100px;
+    background-color: #23ba85;
+    float:right;
+    border-radius: 50%;
+    margin-left:25px; margin-right:25px;
+  }
+
+  &__subText {
+    color:grey;
+    text-align:right;
+    font-size:15px;
+    float:right;
+  }
+
+  &__subImage {
+    display: block;
+    margin: auto;
+    padding: 30%;
+    filter:invert(1);
+  }
+  @include breakpoint(small only) {
+    &__subImageContainer{
+      float:left;
+      text-align:center;
+      margin:0;
+      
+    }
+
+    &__subTitle, &__subText {
+      width:65%;
+      float:right !important;
+      text-align:left;
+    }
+
+    &__subItem {
+      width:100%;
+      max-width:100%;
+      padding:15px;
+    }
+    
+  }
+  
+  @include breakpoint(medium only) {
+    &__subItem {
+      width:100%;
+      max-width:100%;
+      padding:15px;
+    }
+  }
+
+}

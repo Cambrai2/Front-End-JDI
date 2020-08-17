@@ -1,10 +1,110 @@
 $this: ".slide-three";
-
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+  position: absolute;
+  top: 30%;
+  left:0px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
 #{$this} {
+  position: relative;
+
+  &__content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__title {
+    color: white;
+    text-align: center;
+    max-width: 475px;
+    margin: 200px auto auto;
+    font-size: 60px;
+  }
+
   &__background-img {
     width: 100%;
     height: 100%;
     background-position: center center;
     background-size: cover;
   }
+
+  &__btnContainer {
+    display:flex;
+    width:100%;
+  }
+
+  &__column {
+    float:left;
+    flex:1;
+    padding:15px 0px;
+  }
+
+  &__button {
+    background-image: linear-gradient(to right, #23ba85 50%, #363636 50%);
+    background-size: 150% 100%;
+    background-position:left bottom;
+    color:white;
+    padding:15px 0px;
+    transition:all 1s ease;
+    position:relative;
+
+    &:hover {
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color:white;
+  }
+    &--left {
+      float:left;
+    }
+    &--right {
+      float:right;
+    }
+    
+    p {
+    margin:0;
+    float:left;
+    text-align: center;
+    padding:0px 15px;
+    //line-height:1;
+  }
+
+  .icon {
+    margin:0;
+    float:left;
+    text-align:center;
+    line-height:1;
+    height:16px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+  }
+  }
+
+  @include breakpoint(small only) {
+    &__title {
+      font-size: 30px;
+      margin-top:130px;
+    }
+    &__column {
+      display:block;
+      overflow:auto;
+    }
+    &__btnContainer {
+      display:block;
+    }
+
+    &__button {
+      right:50%;
+    }
+  }
+
 }

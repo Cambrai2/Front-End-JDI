@@ -1,0 +1,91 @@
+.about {
+  position: relative; }
+  .about__content {
+    overflow: auto;
+    width: 100%;
+    padding-bottom: 25px; }
+  .about strong, .about b {
+    font-weight: 800; }
+  .about__title {
+    font-size: 50px;
+    color: black;
+    margin-top: 40px;
+    text-align: center; }
+  .about__list {
+    padding: 0;
+    color: #23ba85;
+    font-size: 23px; }
+  .about__background-img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover; }
+  .about__subTitle0 {
+    font-weight: 900;
+    color: #23ba85;
+    font-size: 20px;
+    text-align: right; }
+  .about__subTitle1 {
+    font-weight: 900;
+    color: #23ba85;
+    font-size: 20px;
+    text-align: left; }
+  .about__subItem {
+    width: 50%;
+    float: left;
+    padding: 15px; }
+  .about__subImageContainer0 {
+    height: 100px;
+    width: 100px;
+    background-color: #23ba85;
+    float: right;
+    border-radius: 50%;
+    margin-left: 25px; }
+  .about__subImageContainer1 {
+    height: 100px;
+    width: 100px;
+    background-color: #23ba85;
+    float: left;
+    border-radius: 50%;
+    margin-right: 25px; }
+  .about__subText0 {
+    color: grey;
+    text-align: right;
+    font-size: 15px;
+    width: 75%;
+    float: right; }
+  .about__subText1 {
+    color: grey;
+    text-align: left;
+    font-size: 15px;
+    width: 75%;
+    float: left; }
+  .about__subImage {
+    display: block;
+    margin: auto;
+    padding: 20%;
+    filter: invert(1); }
+  @media screen and (max-width: 39.99875em) {
+    .about__title {
+      font-size: 25px;
+      margin-top: 130px; }
+    .about__text {
+      font-size: 17px; }
+    .about__list {
+      font-size: 17px; } }
+  @media only screen and (max-width: 768px) {
+    .about__subItem {
+      width: 100%;
+      max-width: 100%;
+      padding: 15px; } }
+  @media only screen and (max-width: 375px) {
+    .about__title {
+      margin-top: 50px; }
+    .about__subImageContainer0, .about__subImageContainer1 {
+      float: left;
+      text-align: center;
+      margin: 0; }
+    .about__subTitle0, .about__subText0, .about__subTitle1, .about__subText1 {
+      width: 65%;
+      float: right;
+      text-align: right; } }

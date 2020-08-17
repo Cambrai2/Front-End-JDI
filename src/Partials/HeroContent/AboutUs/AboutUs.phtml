@@ -1,0 +1,46 @@
+<?php
+/** @var $this AboutUs */
+
+use ProtectedNet\FrontendTest\Partials\HeroContent\AboutUs\AboutUs;
+use ProtectedNet\FrontendTest\Components\AboutItem\AboutItem;
+?>
+<div>
+  <div class="<?= $this->getElementName('content') ?>">
+    <h2 class="<?= $this->getElementName('title') ?>"><b>About</b> Us</h2>
+    <div class="<?= $this->getElementName('itemContainer') ?>">
+    <?= AboutItem::i()
+  ->setTitle("Excepteur sint occaecat")
+  ->setText("Excepteur sint occaecat")
+  ->setSvg("case.svg");
+  ?>
+  <?= AboutItem::i()
+  ->setTitle("Excepteur sint occaecat")
+  ->setText("Excepteur sint occaecat")
+  ->setSvg("case.svg")
+  ->rightSide();
+  ?>
+  <?= AboutItem::i()
+  ->setTitle("Excepteur sint occaecat")
+  ->setText("Excepteur sint occaecat")
+  ->setSvg("case.svg");
+  ?>
+  <?= AboutItem::i()
+  ->setTitle("Excepteur sint occaecat")
+  ->setText("Excepteur sint occaecat")
+  ->setSvg("case.svg")
+  ->rightSide();
+  ?>
+  <?= AboutItem::i()
+  ->setTitle("Excepteur sint occaecat")
+  ->setText("Excepteur sint occaecat")
+  ->setSvg("case.svg");
+  ?>
+  <?= AboutItem::i()
+  ->setTitle("Excepteur sint occaecat")
+  ->setText("Excepteur sint occaecat")
+  ->setSvg("case.svg")
+  ->rightSide();
+  ?>
+    </div>
+  </div>
+</div>

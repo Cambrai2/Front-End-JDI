@@ -11,48 +11,9 @@ use ProtectedNet\FrontendTest\Pages\Home\Home;
 
 </head>
 <div>
-<?= $this->_getTextSideImage([
-    "title"=>"<b>About</b> Us",
-    "paragraph"=>"Paragraph Tested",
-    "repeatItems"=>[
-        "element0"=>[
-            "subTitle"=>"Loreim ipsum dolor sit amet",
-            "subText"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "subImage"=>"case.svg"
-        ],
-        "element1"=>[
-            "subTitle"=>"Conse ctetur adipisicing",
-            "subText"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "subImage"=>"comment.svg"
-        ],
-        "element2"=>[
-            "subTitle"=>"Excepteur sint occaecat cupidata",
-            "subText"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "subImage"=>"info.svg"
-        ],
-        "element3"=>[
-            "subTitle"=>"Eiusmod tempor",
-            "subText"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "subImage"=>"chart.svg"
-        ],
-        "element4"=>[
-            "subTitle"=>"Mollit anim id est laborum.",
-            "subText"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "subImage"=>"thumbsUp.svg"
-        ],
-        "element5"=>[
-            "subTitle"=>"Incididunt ut labore",
-            "subText"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            "subImage"=>"cog.svg"
-        ],
-        ]
-]); ?>
+<?= $this->_getAboutUs(); ?>
 
-<?= $this->_getTextOnImage([
-    "title"=>"New <b>Approach</b> to recruiting",
-    "leftColumnText"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
-    "rightColumnText"=>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-]); ?>
+<?= $this->_getTextOnImage(); ?>
 
 <?= $this->_getPricingSlide(); ?>
 

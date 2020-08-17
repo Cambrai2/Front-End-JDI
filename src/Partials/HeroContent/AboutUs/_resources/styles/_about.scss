@@ -1,6 +1,6 @@
 @import "base";
 
-$this: ".TextSideImage";
+$this: ".about";
 
 #{$this} {
   position: relative;
@@ -95,18 +95,7 @@ $this: ".TextSideImage";
     filter:invert(1);
   }
   @include breakpoint(small only) {
-    &__title {
-      font-size: 25px;
-      margin-top: 130px;
-    }
 
-    &__text {
-      font-size: 17px;
-    }
-
-    &__list {
-      font-size: 17px;
-    }
   }
   
   @media only screen and (max-width: 768px) {
@@ -116,23 +105,5 @@ $this: ".TextSideImage";
       padding:15px;
     }
   }
-
-  @media only screen and (max-width: 375px) {
-    &__title {
-      margin-top:50px;
-    }
-
-    &__subImageContainer0, &__subImageContainer1{
-      float:left;
-      text-align:center;
-      margin:0;
-      
-    }
-
-    &__subTitle0, &__subText0, &__subTitle1, &__subText1 {
-      width:65%;
-      float:right;
-      text-align:right;
-    }
-  }
+  
 }
